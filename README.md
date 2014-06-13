@@ -3,8 +3,7 @@ Gitlab Silex Provider
 
 Gitlab service provider for silex micro-framework. Check here: https://github.com/m4tthumphrey/php-gitlab-api
 
-Example
-=======
+## Example
 
 ``` php
 <?php
@@ -22,8 +21,7 @@ $app->register(new GitlabServiceProvider(), array(
 $app['gitlab']->api('projects')->show();
 ```
 
-Install with Composer
-=====================
+## Install with Composer
 
 ``` json
 {
