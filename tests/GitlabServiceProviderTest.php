@@ -1,11 +1,9 @@
 <?php
 
-namespace Silex\Tests\Provider\GitlabServiceProvider;
+namespace Silex\Tests\Provider;
 
 use Silex\Application;
-use Silex\Provider\SerializerServiceProvider;
-use Silex\Provider\GitlabServiceProviderServiceProvider;
-use ReflectionClass;
+use Silex\Provider\GitlabServiceProvider;
 
 /**
  * GitlabServiceProviderTest
@@ -21,8 +19,8 @@ class GitlabServiceProviderTest extends \PHPUnit_Framework_TestCase
         $key = 'key';
         $app = new Application();
         $app->register(new GitlabServiceProvider(), array(
-            "gitlab.url" => $host,
-            "gitlab.key" => $port
+            "gitlab.url" => $url,
+            "gitlab.key" => $key
         ));
 
         $this->assertInstanceOf("\\Gitlab\\Client", $app['gitlab']);
