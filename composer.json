@@ -1,5 +1,5 @@
 {
-    "name": "jrschumacher/silex-provider-gitlab-api",
+    "name": "jrschumacher/silex-provider-gitlab",
     "description": "Silex provider for Gitlab API (m4tthumphrey/php-gitlab-api)",
     "keywords": ["php-gitlab-api","gitlab","silex"],
     "license": "MIT",
